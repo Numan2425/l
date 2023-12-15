@@ -34,7 +34,7 @@ ramdomCat();
 
 
 // Coin Api call with header
-
+/*
 async function coinApi()
 {
     let response = await fetch('https://rest.coinapi.io/v1/exchangerate/BTC/USD',
@@ -50,6 +50,25 @@ async function coinApi()
 
 }
 coinApi();
-/*
+
 
 */
+
+// Below code is for debugging purpose
+
+function arrSumCalculator(arr)
+{
+    debugger;
+   let sum = 0;
+    for(let i = 0; i< arr.length;i++)
+    {
+        sum+=arr[i];
+    }
+    return sum;
+}
+
+
+
+const arr = [1,2,3,4,5,6];
+const arraysum = arrSumCalculator(arr);
+console.log(arraysum);
